@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: clamp(500px, 350vw, (calc(2500px + 20vw )));
+    background-position-x: clamp(-1000px, (calc(110vw + -2000px)), 0px);
+    background-image: url(./milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    height: 110vh;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="mail"]{
+    appearance: none;
+    height: 24px;
+    background-color: rgb(50, 6, 50);
+    border: solid 3px black;
+    border-radius: 8px;
+    color: rgb(197, 104, 255);
+    font-weight: bold;
+}
+
+
+
+.form1Con{
+    margin-top:  100px; 
+    border-radius: 80px;
+    width: min(800px , 80vw);
+    height: 800px;
+    background: linear-gradient(130deg, rgb(31, 2, 57) 30%, rgb(51, 3, 94) 70%, rgb(82, 9, 151))40% ;
+    padding: 40px;
+}
+
+.form2Con{
+    margin-top:  80px; 
+    border-radius: 80px;
+    width: min(900px , 80vw);
+    height: 200px;
+    background: linear-gradient(30deg, rgb(38, 3, 70) 30%, rgb(61, 4, 111) 70%, rgb(82, 9, 151))40% ;
+}
+
+.headCon{
+    display: flex;
+    color: blue;
+    background-color: rgb(43, 209, 73);
+    justify-content: space-between;
+}
+
+.SectionOne{
+    display: grid;
+    gap: 50px;
+    grid-template-rows: 1fr  1fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
+    margin-top: 190px;
+    background-color: rgb(126, 28, 28);
+}
+
+.headOpl{
+
+}
+
+
+.paymentHeader{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 1000;
+    color: purple;
+}
+
+.formFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.paymentInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 0px;
+    grid-template-areas: "kortnummer kortnummer"
+    "andet andet2";
+    background-color: blue;
+    width: 160%;
+    padding: 12px;
+}
+
+.inputCardNumCon{
+    grid-area: kortnummer;
+}
+
+.inputCardNum{
+}
+
+#inputCardNum{
+    width: 400px;
+    appearance: none
+}
+
+#inputExpireDate{
+    width: 150px;
+}
+
+#inputCVCNum{ 
+    width: 50px;
+}
+
+
+.newsOrNoCon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(62, 62, 238);
+}
