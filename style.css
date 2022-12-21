@@ -6,6 +6,13 @@ body{
     background-position-x: clamp(-1000px, (calc(110vw + -2000px)), 0px);
     background-image: url(./milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
     height: 110vh;
+    font-family: sans-serif;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    color: rgb(153, 0, 255)
 }
 
 input[type="text"],
@@ -19,6 +26,7 @@ input[type="mail"]{
     border-radius: 8px;
     color: rgb(197, 104, 255);
     font-weight: bold;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -26,52 +34,61 @@ input[type="mail"]{
 .form1Con{
     margin-top:  100px; 
     border-radius: 80px;
-    width: min(800px , 80vw);
-    height: 800px;
+    width: min(780px , 80vw);
+    height: 780px;
     background: linear-gradient(130deg, rgb(31, 2, 57) 30%, rgb(51, 3, 94) 70%, rgb(82, 9, 151))40% ;
-    padding: 40px;
+    padding: 60px;
 }
 
-.form2Con{
-    margin-top:  80px; 
-    border-radius: 80px;
-    width: min(900px , 80vw);
-    height: 200px;
-    background: linear-gradient(30deg, rgb(38, 3, 70) 30%, rgb(61, 4, 111) 70%, rgb(82, 9, 151))40% ;
-}
 
 .headCon{
     display: flex;
-    color: blue;
-    background-color: rgb(43, 209, 73);
+    flex-direction: row;
+    margin-top: 30px;
     justify-content: space-between;
+    text-shadow:10px 10px 20px rgba(0, 0, 0, 0.648);;
+}
+
+.headOpl{
+    gap: 12px;
 }
 
 .SectionOne{
     display: grid;
-    gap: 50px;
+    row-gap: 50px;
+    column-gap: 100px;
     grid-template-rows: 1fr  1fr 1fr;
-    grid-template-columns: 1.6fr 1fr;
-    margin-top: 190px;
-    background-color: rgb(126, 28, 28);
+    grid-template-columns: 1.6fr 1.1fr;
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.headOpl{
+.headUp{
+    font-size: 40px;
+    font-weight: 1000;
+}
 
+.headLow{
+    font-size: 20px;
 }
 
 
 .paymentHeader{
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 16px;
     font-size: 30px;
     font-weight: 1000;
-    color: purple;
+    color: rgb(153, 0, 255);
+    text-shadow:10px 10px 20px rgba(0, 0, 0, 0.648);;
 }
 
 .formFooter{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 10px;
+    gap: 50px;
 }
 
 .paymentInfo{
@@ -82,21 +99,17 @@ input[type="mail"]{
     column-gap: 0px;
     grid-template-areas: "kortnummer kortnummer"
     "andet andet2";
-    background-color: blue;
     width: 160%;
-    padding: 12px;
+    padding: 20px;
 }
 
 .inputCardNumCon{
     grid-area: kortnummer;
 }
 
-.inputCardNum{
-}
 
 #inputCardNum{
-    width: 400px;
-    appearance: none
+    width: 100%;
 }
 
 #inputExpireDate{
@@ -104,7 +117,7 @@ input[type="mail"]{
 }
 
 #inputCVCNum{ 
-    width: 50px;
+    width: 80px;
 }
 
 
@@ -112,7 +125,35 @@ input[type="mail"]{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 110%;
     padding: 12px;
-    background-color: rgb(62, 62, 238);
+}
+
+.form2Con{
+    margin-top:  80px; 
+    border-radius: 100px;
+    width: min(740px , 80vw);
+    height: 200px;
+    flex-direction: row;
+    padding: 0px 80px;
+    background: linear-gradient(30deg, rgb(38, 3, 70) 30%, rgb(61, 4, 111) 70%, rgb(82, 9, 151))40% ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submitBtn{
+    border-radius: 50px;
+    height: 80px;
+    width: 200px;
+    color: rgb(193, 105, 251);
+    background-color: purple;
+    border:none;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.45);
+    transition: .1s;
+    font-size: 32px;
+    font-weight: bolder;
+}
+#submitBtn:active{
+    transform: scale(1.05);
+    transition-duration: .1s;
 }

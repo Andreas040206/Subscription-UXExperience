@@ -11,35 +11,35 @@
     <div class="form1Con">
         <div class="headCon">
             <div class="headOpl">
-                <div class="headUp">Oplysninger</div>
-                <div class="headLow">Start dit abonnoment i dag.</div>
+                <div class="headUp">Dit abonnoment starter her.</div>
+                <div class="headLow">Felter der skal udfyldes er markeret med *</div>
             </div>
             <div class="logoHead">LOGO</div>
         </div>
         <form action="" method="get" id="subsciptionForm">
          <section class="SectionOne">
           <div class="inputNameCon">
-            <label for="inputName" id="labelInName">Hej</label>
+            <label for="inputName" id="labelInName">Navn</label>
             <input type="text" name="inputName" id="inputName">
           </div>
           <div class="inputUsernameCon">
-            <label for="inputUsername" id="labelInName">Hej</label>
-            <input type="text" name="inputUsername" id="indputUsername">
+            <label for="inputUsername" id="labelInName">Brugernavn*</label>
+            <input type="text" name="inputUsername" id="indputUsername" required>
         </div>
         <div class="inputMailCon">
-            <label for="inputMail" id="labelInName">Hej</label>
-            <input type="mail" name="inputMail" id="inputMail">
+            <label for="inputMail" id="labelInName">Mail*</label>
+            <input type="mail" name="inputMail" id="inputMail" required>
         </div>
         <div class="inputPasswordCon">
-            <label for="inputPassword" id="labelInName">Hej</label>
-            <input type="password" name="inputPassword" id="inputPassword">
+            <label for="inputPassword" id="labelInName">Kode*</label>
+            <input type="password" name="inputPassword" id="inputPassword" required>
         </div>
         <div class="inputLocationCon">
-            <label for="inputLocation" id="labelInName">Hej</label>
+            <label for="inputLocation" id="labelInName">Bopael</label>
             <input type="text" name="inputLocation" id="inputLocation">
         </div>
         <div class="inputTelCon">
-            <label for="inputTel" id="labelInName">Hej</label>
+            <label for="inputTel" id="labelInName">Telefon nr.</label>
             <input type="tel" name="inputTel" id="inputTel">
         </div>
       </section>
@@ -67,6 +67,10 @@
      </form>
     </div>
     <div class="form2Con">
+        <div>
+            HEJ
+        </div>
+        <button id="submitBtn" type="submit" form="subsciptionForm">Abonner</button>
     </div>
 
     <script src="script.js" defer></script>
