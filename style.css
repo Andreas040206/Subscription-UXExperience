@@ -30,6 +30,37 @@ input[type="mail"]{
 }
 
 
+input[type="radio"],
+input[type="checkbox"]{
+    appearance: none;
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px black;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.439);
+    width: 14px;
+    height: 14px;
+    background-color: rgb(120, 54, 163);
+}
+
+input[type="radio"]::before,
+input[type="checkbox"]::before{
+    background-color:rgb(172, 47, 255);
+    color: rgb(243, 232, 250);
+    border-radius: 4px;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    padding-right: 1px;
+    text-align: end;
+    font-size: 12px;
+    content: "✔";
+    visibility: hidden;
+}
+
+input[type="radio"]:checked::before,
+input[type="checkbox"]:checked:before{
+    visibility: visible;
+}
 
 .form1Con{
     margin-top:  300px; 
@@ -44,13 +75,39 @@ input[type="mail"]{
 .headCon{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
     justify-content: space-between;
     text-shadow:10px 10px 20px rgba(0, 0, 0, 0.648);;
 }
 
 .headOpl{
-    gap: 12px;
+    margin-top: 30px;
+}
+
+.headUp{
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.headLow{
+    font-size: 20px;
+    padding: 12px;
+}
+
+.logoCon{
+    position: relative;
+}
+
+.logoHead{
+    font-weight: 1000;
+    font-size: 90px;
+}
+
+.logoBot{
+    font-weight: 1000;
+    font-size: 20px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
 }
 
 .SectionOne{
@@ -63,16 +120,6 @@ input[type="mail"]{
     margin-left: 20px;
     margin-right: 20px;
 }
-
-.headUp{
-    font-size: 40px;
-    font-weight: 1000;
-}
-
-.headLow{
-    font-size: 20px;
-}
-
 
 .paymentHeader{
     margin-top: 50px;
@@ -109,7 +156,7 @@ input[type="mail"]{
 
 
 #inputCardNum{
-    width: 100%;
+    width: 370px;
 }
 
 #inputExpireDate{
@@ -127,7 +174,19 @@ input[type="mail"]{
     align-items: flex-start;
     width: 110%;
     padding: 12px;
+    gap: 24px;
 }
+
+.newsOrNoCon > div{
+    flex-direction: row;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.newsYesLab{
+    width: 250px;
+}
+
 
 .form2Con{
     margin-top:  80px; 
@@ -146,34 +205,6 @@ input[type="mail"]{
     gap: 12px;
 }
 
-#readPrivPol{
-    appearance: none;
-    position: relative;
-    border-radius: 4px;
-    border: solid 1px black;
-    box-shadow: 8px 8px 15px black;
-    width: 14px;
-    height: 14px;
-    background-color: rgb(120, 54, 163);
-}
-
-#readPrivPol::before{
-    background-color:rgb(172, 47, 255);
-    color: rgb(243, 232, 250);
-    border-radius: 4px;
-    width: 11px;
-    height: 12px;
-    position: absolute;
-    padding-right: 1px;
-    text-align: end;
-    font-size: 12px;
-    content: "✔";
-    visibility: hidden;
-}
-
-#readPrivPol:checked::before{
-    visibility: visible;
-}
 
 .readPrivPolLab{
     font-size: 20px;
