@@ -19,7 +19,7 @@
             <div class="logoBot">Experience</div>
          </div>
         </div>
-        <form action="" method="get" id="subsciptionForm">
+        <form action="" method="get" id="subsciptionForm" onsubmit="return scriptValidate()">
          <section class="SectionOne">
           <div class="inputNameCon">
             <label for="inputName" id="labelInName">Navn</label>
@@ -31,19 +31,20 @@
         </div>
         <div class="inputMailCon">
             <label for="inputMail" id="labelInName">Mail*</label>
-            <input type="mail" name="inputMail" id="inputMail" required>
+            <input type="mail" name="inputMail" id="inputMail" required >
         </div>
         <div class="inputPasswordCon">
             <label for="inputPassword" id="labelInName">Kode*</label>
-            <input type="password" name="inputPassword" id="inputPassword" required>
+            <input type="password" name="inputPassword" id="inputPassword" minlength="8" maxlength="16" required >
+            <span class="passwordSpan"></span>
         </div>
         <div class="inputLocationCon">
             <label for="inputLocation" id="labelInName">Bopael</label>
             <input type="text" name="inputLocation" id="inputLocation">
         </div>
-        <div class="inputTelCon">
-            <label for="inputTel" id="labelInName">Telefon nr.</label>
-            <input type="tel" name="inputTel" id="inputTel">
+        <div class="inputRePasswordCon">
+            <label for="inputRePassword" id="labelInName">Gentag kodeord*</label>
+            <input type="password" name="inputRePassword" id="inputRePassword" required>
         </div>
       </section>
       <div class="paymentHeader">Betalingsoplysninger</div>
@@ -51,15 +52,15 @@
         <section class="paymentInfo">
             <div class="inputCardNumCon">
                 <label for="inputCardNum" class="inputCardNum">Kortnummer</label>
-                <input type="tel" name="inputCardNum" id="inputCardNum">
+                <input type="tel" name="inputCardNum" id="inputCardNum" required>
             </div>
             <div class="inputExpireDateCon">
                 <label for="inputExpireDate">Udloebsdato</label>
-                <input type="text" name="inputExpireDate" id="inputExpireDate">
+                <input type="text" name="inputExpireDate" id="inputExpireDate" required>
             </div>
             <div class="inputCVCNumCon">
                 <label for="inputCVCNum">CVC nr.</label>
-                <input type="text" name="inputCVCNum" id="inputCVCNum">
+                <input type="text" name="inputCVCNum" id="inputCVCNum" required>
             </div>
         </section>
         <div class="newsOrNoCon">
