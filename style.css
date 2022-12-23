@@ -46,12 +46,17 @@ input[type="mail"]{
     top: 58px;
 }
 
+.inputRePasswordCon{
+    position: relative;
+}
+
 #inputRePassLab{
     color: rgb(255, 0, 0);
     position: absolute;
     top: 58px;
     visibility: hidden;
 }
+
 
 .right{
     width: 550px;
