@@ -34,16 +34,17 @@ input[type="mail"]{
     position: relative;
 }
 
-.passwordSpan::before{
-    position: absolute;
+#inputPassLab{
     color: rgb(197, 104, 255);
-    content: "Min. 8 tegn  og maks 16 tegn";
-    top: 55px;
-    visibility: hidden;
+    position: absolute;
+    top: 58px;
 }
 
-.passwordSpan::before{
-    visibility: visible;
+#inputRePassLab{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 58px;
+    visibility: hidden;
 }
 
 .right{
@@ -52,9 +53,12 @@ input[type="mail"]{
 
 input[type="text"]:valid:focus,
 input[type="tel"]:valid:focus,
-input[type="password"]:valid:focus,
 input[type="mail"]:valid:focus{
     border: solid 3px rgb(0, 209, 0);
+}
+
+input::placeholder{
+    color: rgb(127, 49, 179);;
 }
 
 input[type="radio"],
@@ -88,6 +92,7 @@ input[type="radio"]:checked::before,
 input[type="checkbox"]:checked:before{
     visibility: visible;
 }
+
 
 .form1Con{
     margin-top:  300px; 

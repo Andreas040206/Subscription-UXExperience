@@ -31,20 +31,21 @@
         </div>
         <div class="inputMailCon">
             <label for="inputMail" id="labelInName">Mail*</label>
-            <input type="mail" name="inputMail" id="inputMail" required >
+            <input type="mail" name="inputMail" id="inputMail" required placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         </div>
         <div class="inputPasswordCon">
-            <label for="inputPassword" id="labelInName">Kode*</label>
-            <input type="password" name="inputPassword" id="inputPassword" minlength="8" maxlength="16" required >
-            <span class="passwordSpan"></span>
+            <div class="passLabel">Kode*</div>
+            <label for="inputPassword" id="inputPassLab">Min. 8 tegn  og maks 16 tegn</label>
+            <input type="password" name="inputPassword" id="inputPassword" class="invalidRedBor" required >
         </div>
         <div class="inputLocationCon">
             <label for="inputLocation" id="labelInName">Bopael</label>
             <input type="text" name="inputLocation" id="inputLocation">
         </div>
         <div class="inputRePasswordCon">
-            <label for="inputRePassword" id="labelInName">Gentag kodeord*</label>
-            <input type="password" name="inputRePassword" id="inputRePassword" required>
+            <div class="passLabel">Gentag kode*</div>
+            <label for="inputRePassword" id="inputRePassLab">Den gentagede kode er ikke identisk</label>
+            <input type="password" name="inputRePassword" id="inputRePassword"  required>
         </div>
       </section>
       <div class="paymentHeader">Betalingsoplysninger</div>
@@ -52,15 +53,15 @@
         <section class="paymentInfo">
             <div class="inputCardNumCon">
                 <label for="inputCardNum" class="inputCardNum">Kortnummer</label>
-                <input type="tel" name="inputCardNum" id="inputCardNum" required>
+                <input type="text" name="inputCardNum" id="inputCardNum" pattern="[0-9]{4}(-|[\s])?[0-9]{4}(-|[\s])?[0-9]{4}(-|\s)?[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx" required>
             </div>
             <div class="inputExpireDateCon">
                 <label for="inputExpireDate">Udloebsdato</label>
-                <input type="text" name="inputExpireDate" id="inputExpireDate" required>
+                <input type="text" name="inputExpireDate" id="inputExpireDate" pattern="[0-9]{2}/[2-4][0-9]" placeholder="MM/YY" required>
             </div>
             <div class="inputCVCNumCon">
                 <label for="inputCVCNum">CVC nr.</label>
-                <input type="text" name="inputCVCNum" id="inputCVCNum" required>
+                <input type="text" name="inputCVCNum" id="inputCVCNum" pattern="[0-9]{3}" required>
             </div>
         </section>
         <div class="newsOrNoCon">
